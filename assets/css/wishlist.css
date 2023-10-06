@@ -1,0 +1,119 @@
+@import "preloader.css";
+@import "navbar.css";
+@import "footer.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(7, 30, 83, 1), rgb(21, 192, 237, 0.5));
+    color: #fff;
+}
+
+.unselectable {
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Likely future */
+}
+
+section {
+    padding: 60px 0;
+}
+
+.title {
+    margin: 25px 0 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.title h1{
+    font-size: 36px;
+    color: #bd9e5a;
+    filter: brightness(1.10);
+    font-weight: 900;
+}
+
+.user_infos--container {
+    text-align: center;
+    background: rgb(7, 30, 83, 0.5);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 30px 30px;
+}
+
+.subscribe__btn {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 25px;
+    color: #fff;
+    background: linear-gradient(90deg, rgb(7, 30, 83, 1), rgb(21, 192, 237, 0.5));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    margin: 20px auto 0 auto;
+    width: 13rem;
+    cursor: pointer;
+}
+
+.films {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ligne {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px
+}
+
+.film {
+    width: 20%;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    transition: transform .3s;
+}
+
+.film:hover {
+    transform: translate3d(0, -3px, 0)
+}
+
+.film img {
+    width: 100%;
+    border-radius: 5px; /* ajouter des bords arrondis */
+}
+
+form button {
+    background: transparent;
+    border: none;
+}
+
+.delete-btn i {
+    font-size: 20px;
+    color: #bd9e5a;
+    filter: brightness(1.10);
+    transition: color 0.2s ease-in-out;
+}
+
+.delete-btn i:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+.delete-btn:focus {
+    outline: none;
+}

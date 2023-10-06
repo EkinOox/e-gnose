@@ -1,0 +1,130 @@
+@import "preloader.css";
+@import "navbar.css";
+@import "footer.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(120deg, #071e53, #15c0ed) 50% no-repeat;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.unselectable {
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Likely future */
+}
+
+section {
+    padding: 60px 0;
+}
+
+.title {
+    margin: 25px 0 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 36px;
+    color: #bd9e5a;
+    filter: brightness(1.10);
+    font-weight: 900;
+}
+
+.title h3 {
+    font-size: 27px;
+    color: #e1dcdc;
+    filter: brightness(1.10);
+    font-weight: 300;
+}
+
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.links-icon-box{
+    color: white;
+}
+
+.services .icon-box {
+    text-align: center;
+    padding: 50px 20px;
+    transition: all ease-in-out 0.3s;
+    background: rgb(7, 30, 83, 0.5);
+    border-radius: 5px;
+
+}
+
+.services .icon-box .icon {
+    margin: 0 auto 20px;
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(180deg, #0085d9 0%, #02c5b1 100%);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.services .icon-box .icon i {
+    color: #fff;
+    font-size: 28px;
+    transition: ease-in-out 0.3s;
+}
+
+.services .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    color: var(--text-color-second);
+    margin-bottom: 0;
+    letter-spacing: 0;
+}
+
+.services .icon-box:hover {
+    border-color: var(--border-hover-background-color);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.services a {
+    text-decoration: none;
+}
+
+.services .icon-box p {
+    color: #fff;
+}
+
+@media (max-width: 570px) {
+    .title h1 {
+        font-size: 25px;
+        margin: auto;
+    }
+
+    .title h3 {
+        font-size: 19px;
+        margin: auto;
+
+    }
+}

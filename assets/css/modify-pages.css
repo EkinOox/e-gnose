@@ -1,0 +1,119 @@
+@import "preloader.css";
+@import "navbar.css";
+@import "footer.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(7, 30, 83, 1), rgb(21, 192, 237, 0.5));
+    color: #fff;
+}
+
+.unselectable {
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Likely future */
+}
+
+section {
+    padding: 60px 0;
+}
+
+.title {
+    margin: 25px 0 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 36px;
+    color: #bd9e5a;
+    filter: brightness(1.10);
+    font-weight: 900;
+}
+
+select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 19em;
+    height: 3em;
+    padding: 0 4em 0 1em;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em, linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255, 0.2) 3em);
+    color: white;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+select option {
+    background-color: #fff;
+    color: #000;
+}
+
+select option:disabled {
+    color: rgba(72, 72, 72, 0.3);
+}
+
+select:focus {
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
+/*################################### */
+/*###### user_infos--container ###### */
+/*################################### */
+
+.user_infos--container {
+    text-align: center;
+    background: rgb(7, 30, 83, 0.5);
+    padding: 60px 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3vh;
+    border-radius: 10px;
+}
+
+.user_infos--container .subscribe__btn {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 25px;
+    color: #fff;
+    background: linear-gradient(90deg, rgb(7, 30, 83, 1), rgb(21, 192, 237, 0.5));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    margin: 20px auto 0 auto;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.form-control {
+    display: unset;
+}
+
+
+.form-group label {
+    float: left;
+}

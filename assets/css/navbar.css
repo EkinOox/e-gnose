@@ -1,0 +1,454 @@
+.links button {
+    line-height: normal;
+    font-family: none;
+}
+
+.wrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: #171c24;
+    top: 0;
+    left: 0;
+}
+
+.wrapper nav {
+    position: relative;
+    display: flex;
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+    height: 54px;
+    align-items: center;
+}
+
+nav .content-navbar {
+    display: flex;
+    align-items: center;
+}
+
+nav .content-navbar .links {
+    display: flex;
+}
+
+.content-navbar .logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.content-navbar .logo span {
+    color: #16d3ff;
+}
+
+ul.links {
+    margin-bottom: 0;
+}
+
+.content-navbar .links li {
+    list-style: none;
+}
+
+.content-navbar .links li a,
+.content-navbar .links li label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.content-navbar .links li label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+label.search-icon {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+label.search-icon i {
+    font-size: 30px;
+}
+
+.content-navbar .links li label {
+    display: none;
+}
+
+.content-navbar .links li a:hover,
+.content-navbar .links li label:hover {
+    background: #323c4e;
+}
+
+.wrapper .search-icon,
+.wrapper .menu-icon {
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 70px;
+    width: 15px;
+    text-align: center;
+}
+
+.wrapper .menu-icon {
+    display: none;
+}
+
+.wrapper #show-search:checked ~ .search-icon i::before {
+    content: "\f00d";
+}
+
+.wrapper .search-box {
+    position: absolute;
+    height: 100%;
+    max-width: calc(100% - 50px);
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.wrapper #show-search:checked ~ .search-box {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #fff;
+    background: #171c24;
+    padding: 0 100px 0 15px;
+}
+
+.search-box input::placeholder {
+    color: #fff;
+}
+
+.search-box .go-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 54px;
+    width: 70px;
+    background: #171c24;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.go-icon i {
+    transition: all 0.3s ease;
+    will-change: transform;
+}
+
+.go-icon i:hover {
+    filter: drop-shadow(0 0 0.3rem #bdbdbd);
+    transition: all 0.3s ease;
+}
+
+.wrapper input[type="checkbox"] {
+    display: none;
+}
+
+/* Dropdown Menu code start */
+.content-navbar .links ul {
+    position: absolute;
+    background: #171c24;
+    top: 80px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: -16px;
+}
+
+.content-navbar .links li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+.content-navbar .links ul li a {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    border-radius: 0px !important;
+}
+
+.content-navbar .links ul ul {
+    position: absolute;
+    top: 0;
+    right: calc(-100% + 8px);
+}
+
+.content-navbar .links ul li {
+    position: relative;
+}
+
+.content-navbar .links ul li:hover ul {
+    top: 0;
+}
+
+.icons2 {
+    right: 0;
+    position: absolute;
+    color: #fff;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: 0;
+    bottom: 11px;
+}
+
+/* Responsive code start */
+@media screen and (min-width: 1250px) {
+    .icons2 {
+        margin-right: 63px;
+    }
+
+    .icons2 i {
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .wrapper nav {
+        max-width: 100%;
+        padding: 0 0;
+    }
+
+    .icons2 {
+        margin-right: 117px;
+    }
+
+    .icons2 i {
+        font-size: 29px;
+    }
+
+    label.search-icon i {
+        margin-right: 70px;
+    }
+
+
+    nav .content-navbar .links {
+        margin-left: 30px;
+    }
+
+    .wrapper .search-box {
+        max-width: calc(100% - 100px);
+    }
+
+    .wrapper .search-box input {
+        padding: 0 100px 0 15px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .responsive-navbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .desktop-navbar {
+        display: none;
+    }
+
+    .wrapper .menu-icon {
+        display: block;
+        margin-left: 25px;
+    }
+
+    .icons2 {
+        margin-right: 70px;
+    }
+
+    .wrapper #show-menu:checked ~ .menu-icon i::before {
+        content: "\f00d";
+    }
+
+    nav .content-navbar .links {
+        display: block;
+        position: fixed;
+        background: #14181f;
+        height: 100%;
+        width: 100%;
+        top: 54px;
+        left: -100%;
+        margin-left: 0;
+        max-width: 350px;
+        overflow-y: auto;
+        padding-bottom: 100px;
+        transition: all 0.3s ease;
+    }
+
+    nav #show-menu:checked ~ .content-navbar .links {
+        left: 0%;
+    }
+
+    .content-navbar .links li {
+        margin: 15px 20px;
+    }
+
+    .content-navbar .links li a,
+    .content-navbar .links li label {
+        line-height: 40px;
+        font-size: 20px;
+        display: block;
+        padding: 8px 18px;
+        cursor: pointer;
+    }
+
+    .content-navbar .links li a.desktop-link {
+        display: none;
+    }
+
+    /* dropdown responsive code start */
+    .content-navbar .links ul,
+    .content-navbar .links ul ul {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        background: none;
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    .content-navbar .links #category-dropdown:checked ~ ul,
+    .content-navbar .links #user-area-dropdown:checked ~ ul {
+        max-height: 100vh;
+    }
+
+    .content-navbar .links ul li {
+        margin: 7px 20px;
+    }
+
+    .content-navbar .links ul li a {
+        font-size: 18px;
+        line-height: 30px;
+        border-radius: 5px !important;
+    }
+
+    .search-box .go-icon {
+        right: -46px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper nav {
+        padding: 0 10px;
+    }
+
+    .content-navbar .logo a {
+        font-size: 27px;
+    }
+
+    .wrapper .search-box {
+        max-width: calc(100% - 70px);
+    }
+
+    .wrapper .search-box .go-icon {
+        width: 30px;
+        right: 0;
+    }
+
+    .wrapper .search-box input {
+        padding-right: 30px;
+    }
+
+    .search-box .go-icon {
+        right: -30px;
+    }
+
+    .icons2 i {
+        font-size: 25px;
+    }
+
+    label.search-icon i {
+        font-size: 25px;
+    }
+
+}
+
+label.search-icon, .menu-icon {
+    margin-bottom: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+    will-change: transform;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 0.15rem #bdbdbd);
+    transition: all 0.5s ease;
+    will-change: transform;
+}
+
+.icons {
+    position: absolute;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+.icons:hover {
+    position: absolute;
+    right: 0;
+    filter: drop-shadow(0 0 0.3rem #bdbdbd);
+    transition: all 0.3s ease;
+}
+
+/*################################ */
+/*###### DROPDOWN SEARCHBAR ###### */
+/*################################ */
+
+.dropdown--searchbar {
+    background-color: #171c24;
+    color: aliceblue;
+}
+
+.dropdown--searchbar a:hover {
+    text-decoration: none;
+}
+
+.dropdown--searchbar p {
+    padding: 10px 10px 7px 3px;
+    margin: 0 7px 7px 7px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.dropdown--searchbar p:hover {
+    background: #323c4e;
+    border-radius: 5px;
+    padding-left: 0;
+    margin: 0 10px 7px 10px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 1250px) {
+    .dropdown--searchbar {
+        width: 100vw;
+    }
+
+}

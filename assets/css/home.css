@@ -1,0 +1,121 @@
+@import "preloader.css";
+@import "navbar.css";
+@import "footer.css";
+@import "carrousel.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(120deg, #071e53, #15c0ed) 50% no-repeat;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.unselectable {
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Likely future */
+}
+
+.title h1 {
+    font-size: 36px;
+    color: #bd9e5a;
+    filter: brightness(1.10);
+    font-weight: 900;
+}
+
+/*############################# */
+/*###### CAROUSEL HEADER ###### */
+/*############################# */
+.carousel-item {
+    height: 80vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 100;
+}
+
+/*########################### */
+/*###### CTA SUBSCRIBE ###### */
+/*########################### */
+
+.cta--subscribe {
+    text-align: center;
+    background: linear-gradient(0deg, rgb(7, 30, 83, 1), rgb(21, 192, 237, 0.5)), url(../img/mozaic.webp) fixed center center repeat;
+    padding: 60px 0;
+    height: 290px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+.cta--subscribe h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.cta--subscribe a {
+    width: 300px;
+    margin: auto;
+}
+
+.cta--subscribe .subscribe__btn {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 25px;
+    color: #fff;
+    background: linear-gradient(90deg, rgb(7, 30, 83, 1), rgb(21, 192, 237, 0.5));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .cta--subscribe {
+        height: 240px;
+    }
+
+    .cta--subscribe h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta--subscribe a {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 478px) {
+    .cta--subscribe {
+        height: 240px;
+    }
+
+    .cta--subscribe h2 {
+        font-size: 1.3rem;
+    }
+
+    .cta--subscribe .subscribe__btn {
+        padding: 5px;
+    }
+}

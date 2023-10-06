@@ -1,0 +1,248 @@
+/*############################## */
+/*###### CAROUSEL CONTENT ###### */
+/*############################## */
+
+.category--title {
+    margin: 25px 0 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.category--title h2 {
+    font-size: 36px;
+    color: #bd9e5a;
+    filter: brightness(1.10);
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+
+.title {
+    margin: 25px 0 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.title h3 {
+    font-size: 29px;
+    color: #bd9e5a;
+    filter: brightness(1.10);
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+
+.more__btn {
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.more__btn i {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.more__btn:hover {
+    text-decoration: none;
+    filter: drop-shadow(0 0 0.2rem #bdbdbd);
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.item a {
+    text-decoration: none;
+}
+
+.item {
+    margin: 10px auto;
+    background-color: #fff;
+    box-shadow: 0 15px 35px #3232321a, 0 5px 15px #0000001a;
+    transition: transform .3s;
+    transform: translate3d(0, -1px, 0);
+    border-radius: 5px;
+    width: 85%;
+}
+
+.item:hover {
+    transform: translate3d(0, -10px, 0)
+}
+
+.item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.item__body {
+    padding: 15px 15px 35px 15px;
+}
+
+.item__title {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #232323
+}
+
+.item__description {
+    color: #585858
+}
+
+.carousel, .items {
+    position: relative;
+    margin-top: 30px;
+}
+
+.carousel {
+    margin-bottom: 30px;
+
+}
+
+.carousel__container {
+    transition: transform .3s;
+    transform: translateZ(0)
+}
+
+.carousel__container:after {
+    content: "";
+    clear: both;
+    display: table
+}
+
+.carousel__item {
+    float: left
+}
+
+.carousel__next, .carousel__prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #fff url(../img/arrow-right.svg) 50% no-repeat;
+    background-size: 20px 20px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -20px;
+    right: -20px;
+    box-shadow: 0 15px 35px #3232321a, 0 5px 15px #0000001a;
+    cursor: pointer;
+    transition: transform .3s, opacity .3s
+}
+
+.carousel__next:hover, .carousel__prev:hover {
+    transform: scale(1.2)
+}
+
+.carousel__prev {
+    background-image: url(../img/arrow-left.svg);
+    right: auto;
+    left: -20px
+}
+
+.carousel__next--hidden, .carousel__prev--hidden {
+    opacity: 0
+}
+
+.carousel__pagination {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: none
+}
+
+.carousel__pagination__button {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+    box-shadow: 0 2px 5px #3232321a;
+    transition: transform .3s;
+    cursor: pointer
+}
+
+.carousel__pagination__button--active, .carousel__pagination__button:hover {
+    transform: scale(1.4)
+}
+
+@media screen and (min-width: 800px) {
+    .carousel__pagination {
+        display: block
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .category--title {
+        margin: 25px 0 25px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .category--title h2 {
+        font-size: 30px;
+        color: #bd9e5a;
+        font-weight: 900;
+        margin: 0 auto;
+    }
+
+
+    .title {
+        margin: 25px 0 25px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .title h3 {
+        font-size: 23px;
+        color: #bd9e5a;
+        filter: brightness(1.10);
+        font-weight: 900;
+        margin-bottom: 0;
+    }
+
+
+    .more__btn {
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+
+    .more__btn i {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .more__btn:hover {
+        text-decoration: none;
+        filter: drop-shadow(0 0 0.2rem #bdbdbd);
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel__prev {
+        left: -7px;
+    }
+    .carousel__next {
+        right: -7px;
+    }
+}

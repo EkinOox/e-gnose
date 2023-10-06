@@ -1,0 +1,341 @@
+@import "preloader.css";
+@import "navbar.css";
+@import "footer.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(7, 30, 83, 1), rgb(21, 192, 237, 0.5));
+    color: #fff;
+}
+
+.unselectable {
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Likely future */
+}
+
+section {
+    padding: 30px 0;
+}
+
+.title {
+    margin: 25px 0 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.title h1{
+    font-size: 36px;
+    color: #bd9e5a;
+    filter: brightness(1.10);
+    font-weight: 900;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*##################################### */
+/*###### SECTION AFFICHE CONTENU ###### */
+/*##################################### */
+
+.details--content__section {
+    height: 80vh;
+    background: linear-gradient(rgb(21, 192, 237, 0.5), rgb(7, 30, 83, 1)) fixed center center repeat;
+    background-size: cover;
+    justify-content: flex-end;
+    flex-direction: column;
+    display: flex;
+}
+
+.poster--content {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    margin-inline: auto;
+}
+
+.infos--content {
+    padding: 0 0 15px 0;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+.fa-star.gold {
+    color: #ffdc0f;
+}
+
+.stars p {
+    margin-bottom: 0;
+}
+
+.container-play-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    width: 100%;
+}
+.button {
+    display: inline-block;
+    position: relative;
+}
+.button.is-play {
+    background-color: rgb(21, 192, 237, 1);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 0;
+}
+
+.button.is-play:focus {
+    outline: none;
+}
+
+.button.is-play .button-outer-circle {
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+.button.is-play .button-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+}
+.button.is-play .button-icon .triangle {
+    animation: fadeIn 7s ease;
+}
+.button.is-play .button-icon .path {
+    stroke-dasharray: 90;
+    stroke-dashoffset: 0;
+    animation: triangleStroke 3s;
+    animation-timing-function: ease;
+}
+.has-scale-animation {
+    animation: smallScale 3s infinite;
+}
+.has-delay-short {
+    animation-delay: 0.5s;
+}
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes triangleStroke {
+    from {
+        stroke-dashoffset: 90;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-webkit-keyframes triangleStroke {
+    from {
+        stroke-dashoffset: 90;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-o-keyframes triangleStroke {
+    from {
+        stroke-dashoffset: 90;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes triangleStroke {
+    from {
+        stroke-dashoffset: 90;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-moz-keyframes smallScale {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes smallScale {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@-o-keyframes smallScale {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes smallScale {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/*################################ */
+/*###### SECTION FORMULAIRE ###### */
+/*################################ */
+
+textarea.form-control {
+    height: 100px;
+}
+
+/*#################################### */
+/*###### SECTION DETAIL CONTENU ###### */
+/*#################################### */
+
+.tabs {
+    margin: 0 auto 0;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
+
+.tabs-btn-container {
+    display: flex;
+}
+
+.tab {
+    border: none;
+    background: transparent;
+    color: #ededed;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 700;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.tab:focus {
+    outline: none;
+}
+
+.tab-content {
+    grid-area: 2 / 1 / 3 / 2;
+    padding: clamp(35px, 3vw, 40px);
+    min-height: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-out;
+}
+
+.tab-content p {
+    line-height: 1.6;
+}
+
+.tab-content h3 {
+    font-size: clamp(20px, 2vw, 25px);
+}
+
+/* Animations */
+.active-tab {
+    background: rgb(21, 192, 237, 0.5);
+    font-weight: bolder;
+    color: #fff
+}
+
+.active-tab-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*############################## */
+/*###### SECTION WISHLIST ###### */
+/*############################## */
+
+.add-remove-wishlist button {
+    background: none;
+    border: none;
+    font-size: 40px;
+}
+
+.add-remove-wishlist button:focus {
+    outline: none;
+}
+
+/*############################## */
+/*###### SECTION FEEDBACK ###### */
+/*############################## */
+
+.user_feedback--container {
+    background: rgb(7, 30, 83, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 0 15px 0;
+}
