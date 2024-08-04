@@ -15,13 +15,13 @@ if (isset($_POST['connexion'])) {
                     $_SESSION["user_role"] = $result['user_role'];
                     $_SESSION["user_value"] = $result['user_value'];
                     if ($_SESSION['user_role'] == 1 && $_SESSION['user_value'] == 1) {
-                        header('location: https://e-gnose.sfait.fr/');
+                        header('location: ../index.php');
                         exit;
                     } elseif ($_SESSION['user_role'] == 2 && $_SESSION['user_value'] == 1) {
-                        header('location: https://e-gnose.sfait.fr/');
+                        header('location: ../index.php');
                         exit;
                     } elseif ($_SESSION['user_role'] == 3 && $_SESSION['user_value'] == 1) {
-                        header('location: https://e-gnose.sfait.fr/');
+                        header('location: ../index.php');
                         exit;
                     } else {
                         header('location: 404.html');
@@ -31,7 +31,7 @@ if (isset($_POST['connexion'])) {
                <div class="box">
                <form class= "formBloc">
                 <div class="mdpPerdu">
-                Le mot de passe est incorrect, réessayez !
+                Le mot de passe est incorrect, rÃ©essayez !
                 </div>
                </form>
                </div>';

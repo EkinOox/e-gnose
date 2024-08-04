@@ -13,14 +13,14 @@ require_once('../controller/singleton_connexion.php');
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Les séries | e-Gnose" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://e-gnose.sfait.fr/assets/img/favicon.png" />
-    <meta property="og:url" content="https://e-gnose.sfait.fr/view/series.php" />
+    <meta property="og:image" content="../assets/img/favicon.png" />
+    <meta property="og:url" content="../view/series.php" />
     <meta property="og:description" content="Films, livres, audios... Toute une bibliothèque pour vous divertir, oû que vous soyez, en illimité !" />
     <meta property="og:locale" content="fr_FR" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Les séries | e-Gnose" />
     <meta name="twitter:description" content="Films, livres, audios... Toute une bibliothèque pour vous divertir, oû que vous soyez, en illimité !" />
-    <meta name="twitter:image" content="https://e-gnose.sfait.fr/assets/img/favicon.png" />
+    <meta name="twitter:image" content="../assets/img/favicon.png" />
     <title>Les séries | e-Gnose</title>
 
     <!-- Favicons -->
@@ -34,16 +34,11 @@ require_once('../controller/singleton_connexion.php');
     <link href="../assets/css/home.css" rel="stylesheet" type="text/css" media="screen">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/d51f8b0cc0.js" crossorigin="anonymous" defer></script>
-    <script src="https://e-gnose.sfait.fr/assets/js/showMovie.js" defer></script>
+    <script src="../assets/js/showMovie.js" defer></script>
 
 </head>
 
 <body class="unselectable">
-
-<div id="preloader">
-    <?php include_once('../controller/preloader.php'); ?>
-</div>
-
 
 <?php
 require_once("../controller/administration.php");

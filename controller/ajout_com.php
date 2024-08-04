@@ -6,7 +6,7 @@ function ajout_com()
     global $db;
     $id_user = $_SESSION["id_user"];
     $id_film = $_GET["id"];
-
+    
 
     if (!empty($_POST)) {
         if (isset($_POST["titre"], $_POST["content"], $_POST["stars"]) && !empty($_POST["titre"]) && !empty($_POST["content"]) && !empty($_POST["stars"])) {
@@ -25,12 +25,14 @@ function ajout_com()
             $query->bindValue(":commentaire_text", $content, PDO::PARAM_STR);
             $query->bindValue(":commentaire_note", strval($_POST["stars"]), PDO::PARAM_STR);
             $query->bindValue(":commentaire_value", 1, PDO::PARAM_INT);
+            $query->execute();
 
             // On execute
-            if (!$query->execute()) {
+            if (!$query) {
                 die("Une erreur est survenue");
-            } elseif ($query->execute()) {
+            } else {
                 $id = $db->lastInsertId();
+                
                 $sql2 = "INSERT INTO `laisser`(`id_user`, `id_commentaire`, `id_film`, `id_serie`,`id_livre`) VALUES (:id_user, :id_commentaire, :id_film, :id_serie, :id_livre)";
                 // Préparation de la requête
                 $query2 = $db->prepare($sql2);
@@ -74,7 +76,7 @@ if (isset($_SESSION['user_nom'])) {
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="stars"> Nombres d'étoiles</label>
-                                        <input type="number" class="form-control" name="stars" id="stars" max="5.0" min="1.0" maxlength="1.0" step="0.01" placeholder="Nombres d'étoiles">
+                                        <input type="number" class="form-control" name="stars" id="stars" max="5.0" min="1.0" step="0.01" placeholder="Nombres d'étoiles">
                                     </div>
                                 </div>
                                 <div class="col-md-12">

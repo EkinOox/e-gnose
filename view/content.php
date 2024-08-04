@@ -14,15 +14,15 @@ require_once("../model/films_model.php");
           content="Films, livres, audios | Toute une bibliothèque pour vous divertir, où que vous soyez, en illimité !"/>
     <meta name="robots" content="index, follow"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="https://e-gnose.sfait.fr/assets/img/favicon.png"/>
-    <meta property="og:url" content="https://e-gnose.sfait.fr/view/content.php"/>
+    <meta property="og:image" content="../assets/img/favicon.png"/>
+    <meta property="og:url" content="../view/content.php"/>
     <meta property="og:description"
           content="Films, livres, audios | Toute une bibliothèque pour vous divertir, où que vous soyez, en illimité !"/>
     <meta property="og:locale" content="fr_FR"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:description"
           content="Films, livres, audios | Toute une bibliothèque pour vous divertir, où que vous soyez, en illimité !"/>
-    <meta name="twitter:image" content="https://e-gnose.sfait.fr/assets/img/favicon.png"/>
+    <meta name="twitter:image" content="../assets/img/favicon.png"/>
 
     <!-- Favicons -->
     <link href="../assets/img/favicon.ico" rel="icon">
@@ -31,7 +31,7 @@ require_once("../model/films_model.php");
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-    <link href="https://e-gnose.sfait.fr/assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/favicon.png" rel="icon">
     <link href="https://cdn.usebootstrap.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="../assets/css/content-details.css" rel="stylesheet" type="text/css" media="screen">
     <link href="../assets/css/carrousel.css" rel="stylesheet" type="text/css" media="screen">
@@ -39,8 +39,8 @@ require_once("../model/films_model.php");
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/d51f8b0cc0.js" crossorigin="anonymous" defer></script>
-    <script src="https://e-gnose.sfait.fr/assets/js/popup.js" defer></script>
-    <script src="https://e-gnose.sfait.fr/assets/js/showMovie.js" defer></script>
+    <script src="../assets/js/popup.js" defer></script>
+    <script src="../assets/js/showMovie.js" defer></script>
 </head>
 
 <body class="unselectable">
@@ -55,7 +55,7 @@ include_once('../_navbar/navbar.php');
 // On vérifie que le média existe bien en récupérant son ID
 if (!isset($_GET['id']) || empty($_GET['id'])) {
     // S'il n'existe pas, on le renvoie vers la page de recherche
-    header("Location: ../index.php");
+    header("Location: ./index.php");
     exit;
 }
 // On stock l'id de la ressource dans une variable

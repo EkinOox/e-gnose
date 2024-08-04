@@ -16,8 +16,8 @@ require_once('../controller/administration.php');
     <meta name="robots" content="index, follow"/>
     <meta property="og:title" content="Espace compte | e-Gnose"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="https://e-gnose.sfait.fr/assets/img/favicon.png"/>
-    <meta property="og:url" content="https://e-gnose.sfait.fr/view/account-user.php"/>
+    <meta property="og:image" content="../assets/img/favicon.png"/>
+    <meta property="og:url" content="../view/account-user.php"/>
     <meta property="og:description"
           content="Films, livres, audios | Toute une bibliothà¨que pour vous divertir, oà¹ que vous soyez, en illimité !"/>
     <meta property="og:locale" content="fr_FR"/>
@@ -25,7 +25,7 @@ require_once('../controller/administration.php');
     <meta name="twitter:title" content="Espace compte | e-Gnose"/>
     <meta name="twitter:description"
           content="Films, livres, audios | Toute une bibliothà¨que pour vous divertir, oà¹ que vous soyez, en illimité !"/>
-    <meta name="twitter:image" content="https://e-gnose.sfait.fr/assets/img/favicon.png"/>
+    <meta name="twitter:image" content="../assets/img/favicon.png"/>
     <title>Espace compte | e-Gnose</title>
 
     <!-- Links -->
@@ -33,7 +33,7 @@ require_once('../controller/administration.php');
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.usebootstrap.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="https://e-gnose.sfait.fr/assets/img/favicon.ico" rel="icon">
+    <link href="../assets/img/favicon.ico" rel="icon">
     <link href="../assets/css/user-account.css" rel="stylesheet" type="text/css" media="screen">
     <link href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css' rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">

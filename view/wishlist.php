@@ -4,7 +4,7 @@ require_once('../controller/singleton_connexion.php');
 
 // Vérifier si l'utilisateur est connecté
 if (!isset($_SESSION['id_user'])) {
-    header('Location: https://e-gnose.sfait.fr/view/authentification.php');
+    header('Location: ../view/authentification.php');
     exit;
 }
 if (isset($_POST["id_film"])) {
@@ -15,7 +15,7 @@ if (isset($_POST["id_film"])) {
     $delete = $db->prepare('DELETE FROM wishlist WHERE id_user = ? AND id_film = ?');
     $delete->execute([$_SESSION['id_user'], $id_film]);
     if ($delete) {
-        header("Location: https://e-gnose.sfait.fr/view/wishlist.php");
+        header("Location: ../view/wishlist.php");
         exit;
     }
 }elseif(isset($_POST["id_serie"])){
@@ -25,7 +25,7 @@ if (isset($_POST["id_film"])) {
     $delete2 = $db->prepare('DELETE FROM wishlist WHERE id_user = ? AND id_serie = ?');
     $delete2->execute([$_SESSION['id_user'], $id_serie]);
     if ($delete2) {
-        header("Location: https://e-gnose.sfait.fr/view/wishlist.php");
+        header("Location: ../view/wishlist.php");
         exit;
     }
 }elseif(isset($_POST["id_livre"])){
@@ -35,7 +35,7 @@ if (isset($_POST["id_film"])) {
     $delete3 = $db->prepare('DELETE FROM wishlist WHERE id_user = ? AND id_livre = ?');
     $delete3->execute([$_SESSION['id_user'], $id_livre]);
     if ($delete3) {
-        header("Location: https://e-gnose.sfait.fr/view/wishlist.php");
+        header("Location: ../view/wishlist.php");
         exit;
     }
 }
@@ -104,8 +104,8 @@ if (!$result3) {
     <meta name="robots" content="index, follow"/>
     <meta property="og:title" content="Ma wishlist | e-Gnose"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="https://e-gnose.sfait.fr/assets/img/favicon.png"/>
-    <meta property="og:url" content="https://e-gnose.sfait.fr/view/wishlist.php"/>
+    <meta property="og:image" content="../assets/img/favicon.png"/>
+    <meta property="og:url" content="../view/wishlist.php"/>
     <meta property="og:description"
           content="Films, livres, audios … Toute une bibliothèque pour vous divertir, où que vous soyez, en illimité !"/>
     <meta property="og:locale" content="fr_FR"/>
@@ -113,7 +113,7 @@ if (!$result3) {
     <meta name="twitter:title" content="Ma wishlist | e-Gnose"/>
     <meta name="twitter:description"
           content="Films, livres, audios … Toute une bibliothèque pour vous divertir, où que vous soyez, en illimité !"/>
-    <meta name="twitter:image" content="https://e-gnose.sfait.fr/assets/img/favicon.png"/>
+    <meta name="twitter:image" content="../assets/img/favicon.png"/>
     <title>Ma wishlist | e-Gnose</title>
 
     <!-- Favicons -->
@@ -125,7 +125,7 @@ if (!$result3) {
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.usebootstrap.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="../assets/css/wishlist.css" rel="stylesheet" type="text/css" media="screen">
-    <script src="https://e-gnose.sfait.fr/assets/js/showMovie.js" defer></script>
+    <script src="../assets/js/showMovie.js" defer></script>
     <script src="https://kit.fontawesome.com/d51f8b0cc0.js" crossorigin="anonymous" defer></script>
 </head>
 

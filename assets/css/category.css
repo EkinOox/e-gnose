@@ -1,0 +1,84 @@
+@import "navbar.css";
+@import "footer.css";
+@import "carrousel.css";
+@import "scrollbar.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(120deg, #071e53, #15c0ed) 50% no-repeat;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.unselectable {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
+
+/*########################### */
+/*###### CTA SUBSCRIBE ###### */
+/*########################### */
+
+.cta--subscribe {
+    text-align: center;
+    background: linear-gradient(0deg, rgb(7, 30, 83, 1), rgb(21, 192, 237, 0.5)), url(../img/mozaic.jpg) fixed center center repeat;
+    padding: 60px 0;
+    height: 290px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+.cta--subscribe h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.cta--subscribe a {
+    width: 300px;
+    margin: auto;
+}
+
+.cta--subscribe .subscribe__btn {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 25px;
+    color: #fff;
+    background: linear-gradient(90deg, rgb(7, 30, 83, 1), rgb(21, 192, 237, 1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .cta--subscribe {
+        height: 150px;
+    }
+    .cta--subscribe a {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

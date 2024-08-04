@@ -30,14 +30,14 @@ if(isset($_SESSION['user_role'])){
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Espace administration | e-Gnose" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://e-gnose.sfait.fr/assets/img/favicon.ico" />
-    <meta property="og:url" content="https://e-gnose.sfait.fr/index-admin.php" />
+    <meta property="og:image" content="../assets/img/favicon.ico" />
+    <meta property="og:url" content="../index-admin.php" />
     <meta property="og:description" content="Films, livres, audios … Toute une bibliothèque pour vous divertir, où que vous soyez, en illimité !" />
     <meta property="og:locale" content="fr_FR" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Espace administration | e-Gnose" />
     <meta name="twitter:description" content="Films, livres, audios … Toute une bibliothèque pour vous divertir, où que vous soyez, en illimité !" />
-    <meta name="twitter:image" content="https://e-gnose.sfait.fr/assets/img/favicon.png" />
+    <meta name="twitter:image" content="../assets/img/favicon.png" />
     <title>Espace administration | e-Gnose</title>
 
     <!-- Favicons -->
@@ -51,19 +51,14 @@ if(isset($_SESSION['user_role'])){
     <link href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css' rel="stylesheet">
     <link href="assets/css/administration.css" rel="stylesheet" type="text/css" media="screen">
     <script src="https://kit.fontawesome.com/d51f8b0cc0.js" crossorigin="anonymous" defer></script>
-    <script src="https://e-gnose.sfait.fr/assets/js/showMovie.js" defer></script>
+    <script src="../assets/js/showMovie.js" defer></script>
 </head>
 
-<body class="unselectable">
+<body>
 
 <?php
 include_once('_navbar/navbar.php');
 ?>
-
-<div id="preloader">
-    <?php include_once('controller/preloader.php'); ?>
-</div>
-
 
 <section class="services">
     <div class="container">
@@ -116,7 +111,7 @@ include_once('_navbar/navbar.php');
             </div> -->
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                <a href="view/modify-film.php">
+                <a href="./view/modify-film.php">
                     <div class="icon-box">
                         <div class="icon"><i style="width: 80%" class="fa-solid fa-pen"></i></div>
                         <h4>Modifier un média</h4>
@@ -126,7 +121,7 @@ include_once('_navbar/navbar.php');
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-                <a href="view/delete-film.php">
+                <a href="./view/delete-film.php">
                     <div class="icon-box">
                         <div class="icon"><i style="width: 80%" class="fa-solid fa-trash"></i></div>
                         <h4>Supprimer un média</h4>
@@ -138,7 +133,7 @@ include_once('_navbar/navbar.php');
     </div>
     <div class="container services">
         <div class="title">
-            <h3>Administrer une série.</h3>
+            <h3>Administrer une serie.</h3>
         </div>
 
         <div class="row">
@@ -153,7 +148,7 @@ include_once('_navbar/navbar.php');
             </div> -->
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                <a href="view/modify-serie.php">
+                <a href="./view/modify-serie.php">
                     <div class="icon-box">
                         <div class="icon"><i style="width: 80%" class="fa-solid fa-pen"></i></div>
                         <h4>Modifier une serie</h4>
@@ -163,7 +158,7 @@ include_once('_navbar/navbar.php');
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-                <a href="view/delete-serie.php">
+                <a href="./view/delete-serie.php">
                     <div class="icon-box">
                         <div class="icon"><i style="width: 80%" class="fa-solid fa-trash"></i></div>
                         <h4>Supprimer une serie</h4>
@@ -190,7 +185,7 @@ include_once('_navbar/navbar.php');
             </div> -->
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                <a href="view/modify-livre.php">
+                <a href="./view/modify-livre.php">
                     <div class="icon-box">
                         <div class="icon"><i style="width: 80%" class="fa-solid fa-pen"></i></div>
                         <h4>Modifier un livre</h4>
@@ -200,7 +195,7 @@ include_once('_navbar/navbar.php');
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-                <a href="view/delete-livre.php">
+                <a href="./view/delete-livre.php">
                     <div class="icon-box">
                         <div class="icon"><i style="width: 80%" class="fa-solid fa-trash"></i></div>
                         <h4>Supprimer un livre</h4>

@@ -60,11 +60,6 @@ if(isset($_SESSION['user_role'])){
 
 <body class="unselectable">
 
-<div id="preloader">
-    <?php include_once('../controller/preloader.php'); ?>
-</div>
-
-
 <?php
 include_once('../_navbar/navbar.php');
 ?>

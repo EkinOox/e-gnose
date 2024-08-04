@@ -15,14 +15,14 @@ require_once('../controller/administration.php');
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Les films | e-Gnose" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://e-gnose.sfait.fr/assets/img/favicon.png" />
-    <meta property="og:url" content="https://e-gnose.sfait.fr/view/film.php" />
+    <meta property="og:image" content="../assets/img/favicon.png" />
+    <meta property="og:url" content="../view/film.php" />
     <meta property="og:description" content="Films, livres, audios... Toute une bibliothÃ¨que pour vous divertir, oÃ» que vous soyez, en illimité !" />
     <meta property="og:locale" content="fr_FR" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Les films | e-Gnose" />
     <meta name="twitter:description" content="Films, livres, audios... Toute une bibliothÃ¨que pour vous divertir, oÃ» que vous soyez, en illimité !" />
-    <meta name="twitter:image" content="https://e-gnose.sfait.fr/assets/img/favicon.png" />
+    <meta name="twitter:image" content="../assets/img/favicon.png" />
     <title>Les films | e-Gnose</title>
 
     <!-- Favicons -->
@@ -36,28 +36,21 @@ require_once('../controller/administration.php');
     <link href="../assets/css/home.css" rel="stylesheet" type="text/css" media="screen">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/d51f8b0cc0.js" crossorigin="anonymous" defer></script>
-    <script src="https://e-gnose.sfait.fr/assets/js/showMovie.js" defer></script>
+    <script src="../assets/js/showMovie.js" defer></script>
 
 </head>
 
 <body class="unselectable">
 
-<div id="preloader">
-    <?php include_once('../controller/preloader.php'); ?>
-</div>
-
-
     <?php
     include_once('../_navbar/navbar.php');
     ?>
 
-    <section id="carousel-content" style="padding-top: 60px">
+    <section id="carousel-content">
         <div class="container">
+
             <div class="title">
-                <h1>Les films</h1>
-            </div>
-            <div class="title">
-                <h3>Films les plus récents</h3>
+                <h3>Titres les plus récents disponible</h3>
             </div>
             <div id="carousel0">
                 <?php
@@ -71,7 +64,7 @@ require_once('../controller/administration.php');
         <div class="container">
 
             <div class="title">
-                <h3>Films les mieux notés</h3>
+                <h3>Les mieux notés</h3>
             </div>
             <div id="carousel1">
                 <?php
@@ -85,7 +78,7 @@ require_once('../controller/administration.php');
         <div class="container">
 
             <div class="title">
-                <h3>Films les plus courts</h3>
+                <h3>Les Films les plus court</h3>
             </div>
             <div id="carousel2">
                 <?php
@@ -99,7 +92,7 @@ require_once('../controller/administration.php');
         <div class="container">
 
             <div class="title">
-                <h3>Films d'action</h3>
+                <h3>Les films d'action</h3>
             </div>
             <div id="carousel3">
                 <?php
@@ -113,7 +106,7 @@ require_once('../controller/administration.php');
         <div class="container">
 
             <div class="title">
-                <h3>Films d'aventure</h3>
+                <h3>Les films d'Aventure</h3>
             </div>
             <div id="carousel4">
                 <?php
@@ -127,7 +120,7 @@ require_once('../controller/administration.php');
         <div class="container">
 
             <div class="title">
-                <h3>Films de science-fiction</h3>
+                <h3>Les Films de Science-Fiction</h3>
             </div>
             <div id="carousel5">
                 <?php
@@ -141,7 +134,7 @@ require_once('../controller/administration.php');
         <div class="container">
 
             <div class="title">
-                <h3>Films d'horreur</h3>
+                <h3>Les Films d'Horreur</h3>
             </div>
             <div id="carousel6">
                 <?php
@@ -155,7 +148,7 @@ require_once('../controller/administration.php');
         <div class="container">
 
             <div class="title">
-                <h3>Films fantastiques</h3>
+                <h3>Les Films Fantastiques</h3>
             </div>
             <div id="carousel7">
                 <?php
@@ -169,7 +162,7 @@ require_once('../controller/administration.php');
         <div class="container">
 
             <div class="title">
-                <h3>Films les plus longs</h3>
+                <h3>Les Films les plus Longs</h3>
             </div>
             <div id="carousel8">
                 <?php
@@ -187,7 +180,6 @@ require_once('../controller/administration.php');
 
     <script src="https://cdn.usebootstrap.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <script src="../assets/js/carousel.js" async></script>
-    <script src="../assets/js/preloader.js"></script>
 
 </body>
 

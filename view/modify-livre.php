@@ -64,11 +64,6 @@ if(isset($_SESSION['user_role'])){
 include_once('../_navbar/navbar.php');
 ?>
 
-<div id="preloader">
-    <?php include_once('../controller/preloader.php'); ?>
-</div>
-
-
 <section>
     <div class="container">
         <div class="title">

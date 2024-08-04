@@ -10,6 +10,6 @@ function showMovie(str) {
             }
         };
     }
-    xhttp.open("GET", "https://e-gnose.sfait.fr/controller/getMedia.php?m=" + str, true);
+    xhttp.open("GET", "./controller/getMedia.php?m=" + str, true);
     xhttp.send();
 }

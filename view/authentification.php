@@ -14,8 +14,8 @@ require_once('../controller/ControllerConnexion.php');
     <meta name="robots" content="index, follow"/>
     <meta property="og:title" content="Authentification | e-Gnose"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="https://e-gnose.sfait.fr/assets/img/favicon.png"/>
-    <meta property="og:url" content="https://e-gnose.sfait.fr/view/authentification.php"/>
+    <meta property="og:image" content="../assets/img/favicon.png"/>
+    <meta property="og:url" content="../view/authentification.php"/>
     <meta property="og:description"
           content="Films, livres, audios | Toute une bibliothèque pour vous divertir, où que vous soyez, en illimité !"/>
     <meta property="og:locale" content="fr_FR"/>
@@ -23,7 +23,7 @@ require_once('../controller/ControllerConnexion.php');
     <meta name="twitter:title" content="Authentification | e-Gnose"/>
     <meta name="twitter:description"
           content="Films, livres, audios | Toute une bibliothèque pour vous divertir, où que vous soyez, en illimité !"/>
-    <meta name="twitter:image" content="https://e-gnose.sfait.fr/assets/img/favicon.png"/>
+    <meta name="twitter:image" content="../assets/img/favicon.png"/>
     <title>Authentification | e-Gnose</title>
 
     <!-- Favicons -->

@@ -128,7 +128,7 @@ class Administration
                     <h4 class='modal-title w-100'>Parfait !</h4>
                 </div>
                 <div class='modal-body'>
-                    <p class='text-center'>Vos nouvelles informations ont été enregistrées avec succès. Vous devrez peut-être rafraichir la page pour les voir apparaitre.</p>
+                    <p class='text-center'>Vos nouvelles informations ont été enregistrées avec succÃ¨s. Vous devrez peut-Ãªtre rafraichir la page pour les voir apparaitre.</p>
                 </div>
                 <div class='modal-footer'>
                     <button class='btn btn-success btn-block' data-dismiss='modal'>Fermer</button>
@@ -308,12 +308,12 @@ die();
         if ($allRessources->rowCount() > 0) {
             while ($ressources = $allRessources->fetch()) {
                 echo '<div class="item" style="width: 85%">
-<a href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">
+<a href="./view/content.php?id=' . $ressources['id_film'] . '">
     <div class="item__image"><img src="' . $ressources['film_cover_image'] . '" alt=""></div>
     <div class="item__body">
         <div class="item__title">' . strip_tags($ressources['film_titre']) . '</div>
         <div class="item__description">' . substr($ressources['film_description'], 0, 200) . '... <br/>
-        <a style="float: right" href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
+        <a style="float: right" href="./view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
     </div>
 </a>
 </div>';
@@ -330,12 +330,12 @@ die();
         if ($allRessources->rowCount() > 0) {
             while ($ressources = $allRessources->fetch()) {
                 echo '<div class="item" style="width: 85%">
-<a href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">
+<a href="./view/content.php?id=' . $ressources['id_film'] . '">
     <div class="item__image"><img src="' . $ressources['film_cover_image'] . '" alt=""></div>
     <div class="item__body">
         <div class="item__title">' . strip_tags($ressources['film_titre']) . '</div>
         <div class="item__description">' . substr($ressources['film_description'], 0, 200) . '... <br/>
-        <a style="float: right" href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
+        <a style="float: right" href="./view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
     </div>
 </a>
 </div>';
@@ -352,12 +352,12 @@ die();
         if ($allRessources->rowCount() > 0) {
             while ($ressources = $allRessources->fetch()) {
                 echo '<div class="item" style="width: 85%">
-<a href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">
+<a href="./view/content.php?id=' . $ressources['id_film'] . '">
     <div class="item__image"><img src="' . $ressources['film_cover_image'] . '" alt=""></div>
     <div class="item__body">
         <div class="item__title">' . strip_tags($ressources['film_titre']) . '</div>
         <div class="item__description">' . substr($ressources['film_description'], 0, 200) . '... <br/>
-        <a style="float: right" href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
+        <a style="float: right" href="./view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
     </div>
 </a>
 </div>';
@@ -375,12 +375,12 @@ die();
         if ($allRessources->rowCount() > 0) {
             while ($ressources = $allRessources->fetch()) {
                 echo '<div class="item" style="width: 85%">
-<a href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">
+<a href="./view/content.php?id=' . $ressources['id_film'] . '">
     <div class="item__image"><img src="' . $ressources['film_cover_image'] . '" alt=""></div>
     <div class="item__body">
         <div class="item__title">' . strip_tags($ressources['film_titre']) . '</div>
         <div class="item__description">' . substr($ressources['film_description'], 0, 200) . '... <br/>
-        <a style="float: right" href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
+        <a style="float: right" href="./view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
     </div>
 </a>
 </div>';
@@ -397,12 +397,12 @@ die();
         if ($allRessources->rowCount() > 0) {
             while ($ressources = $allRessources->fetch()) {
                 echo '<div class="item" style="width: 85%">
-<a href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">
+<a href="./view/content.php?id=' . $ressources['id_film'] . '">
     <div class="item__image"><img src="' . $ressources['film_cover_image'] . '" alt=""></div>
     <div class="item__body">
         <div class="item__title">' . strip_tags($ressources['film_titre']) . '</div>
         <div class="item__description">' . substr($ressources['film_description'], 0, 200) . '... <br/>
-        <a style="float: right" href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
+        <a style="float: right" href="./view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
     </div>
 </a>
 </div>';
@@ -419,12 +419,12 @@ die();
         if ($allRessources->rowCount() > 0) {
             while ($ressources = $allRessources->fetch()) {
                 echo '<div class="item" style="width: 85%">
-    <a href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">
+    <a href="./view/content.php?id=' . $ressources['id_film'] . '">
         <div class="item__image"><img src="' . $ressources['film_cover_image'] . '" alt=""></div>
         <div class="item__body">
             <div class="item__title">' . strip_tags($ressources['film_titre']) . '</div>
             <div class="item__description">' . substr($ressources['film_description'], 0, 200) . '... <br/>
-            <a style="float: right" href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
+            <a style="float: right" href="./view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
         </div>
     </a>
 </div>';
@@ -441,12 +441,12 @@ die();
         if ($allRessources->rowCount() > 0) {
             while ($ressources = $allRessources->fetch()) {
                 echo '<div class="item" style="width: 85%">
-    <a href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">
+    <a href="./view/content.php?id=' . $ressources['id_film'] . '">
         <div class="item__image"><img src="' . $ressources['film_cover_image'] . '" alt=""></div>
         <div class="item__body">
             <div class="item__title">' . strip_tags($ressources['film_titre']) . '</div>
             <div class="item__description">' . substr($ressources['film_description'], 0, 200) . '... <br/>
-            <a style="float: right" href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
+            <a style="float: right" href="./view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
         </div>
     </a>
 </div>';
@@ -463,12 +463,12 @@ die();
         if ($allRessources->rowCount() > 0) {
             while ($ressources = $allRessources->fetch()) {
                 echo '<div class="item" style="width: 85%">
-    <a href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">
+    <a href="./view/content.php?id=' . $ressources['id_film'] . '">
         <div class="item__image"><img src="' . $ressources['film_cover_image'] . '" alt=""></div>
         <div class="item__body">
             <div class="item__title">' . strip_tags($ressources['film_titre']) . '</div>
             <div class="item__description">' . substr($ressources['film_description'], 0, 200) . '... <br/>
-            <a style="float: right" href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
+            <a style="float: right" href="./view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
         </div>
     </a>
 </div>';
@@ -485,12 +485,12 @@ die();
         if ($allRessources->rowCount() > 0) {
             while ($ressources = $allRessources->fetch()) {
                 echo '<div class="item" style="width: 85%">
-    <a href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">
+    <a href="./view/content.php?id=' . $ressources['id_film'] . '">
         <div class="item__image"><img src="' . $ressources['film_cover_image'] . '" alt=""></div>
         <div class="item__body">
             <div class="item__title">' . strip_tags($ressources['film_titre']) . '</div>
             <div class="item__description">' . substr($ressources['film_description'], 0, 200) . '... <br/>
-            <a style="float: right" href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
+            <a style="float: right" href="./view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
         </div>
     </a>
 </div>';
@@ -507,12 +507,12 @@ die();
         if ($allRessources->rowCount() > 0) {
             while ($ressources = $allRessources->fetch()) {
                 echo '<div class="item" style="width: 85%">
-                        <a href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">
+                        <a href="./view/content.php?id=' . $ressources['id_film'] . '">
                         <div class="item__image"><img src="' . $ressources['film_cover_image'] . '" alt=""></div>
                         <div class="item__body">
                             <div class="item__title">' . strip_tags($ressources['film_titre']) . '</div>
                             <div class="item__description">' . substr($ressources['film_description'], 0, 200) . '... <br/>
-                            <a style="float: right" href="https://e-gnose.sfait.fr/view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
+                            <a style="float: right" href="./view/content.php?id=' . $ressources['id_film'] . '">Lire la suite...</a></div>
                         </div>
                         </a> 
                       </div>';
@@ -532,7 +532,7 @@ die();
         if ($allRessources->rowCount() > 0) {
             while ($ressources = $allRessources->fetch()) {
                 echo '<div class="item" style="width: 85%">
-                        <a href="https://e-gnose.sfait.fr/view/content_serie.php?id=' . $ressources['id_serie'] . '">
+                        <a href="./view/content_serie.php?id=' . $ressources['id_serie'] . '">
                             <div class="item__image"><img src="' . $ressources['serie_cover_image'] . '" alt=""></div>
                             <div class="item__body">
                                 <div class="item__title">' . strip_tags($ressources['serie_titre']) . '</div>
@@ -552,7 +552,7 @@ die();
         if ($allRessources->rowCount() > 0) {
             while ($ressources = $allRessources->fetch()) {
                 echo '<div class="item" style="width: 85%">
-                        <a href="https://e-gnose.sfait.fr/view/content_serie.php?id=' . $ressources['id_serie'] . '">
+                        <a href="./view/content_serie.php?id=' . $ressources['id_serie'] . '">
                             <div class="item__image"><img src="' . $ressources['serie_cover_image'] . '" alt=""></div>
                             <div class="item__body">
                                 <div class="item__title">' . strip_tags($ressources['serie_titre']) . '</div>
@@ -572,7 +572,7 @@ die();
         if ($allRessources->rowCount() > 0) {
             while ($ressources = $allRessources->fetch()) {
                 echo '<div class="item" style="width: 85%">
-                        <a href="https://e-gnose.sfait.fr/view/content_serie.php?id=' . $ressources['id_serie'] . '">
+                        <a href="./view/content_serie.php?id=' . $ressources['id_serie'] . '">
                             <div class="item__image"><img src="' . $ressources['serie_cover_image'] . '" alt=""></div>
                             <div class="item__body">
                                 <div class="item__title">' . strip_tags($ressources['serie_titre']) . '</div>
@@ -594,7 +594,7 @@ die();
         if ($req->rowCount() > 0) {
             while ($ressources = $req->fetch()) {
                 echo '<div class="item" style="width: 85%">
-                        <a href="https://e-gnose.sfait.fr/view/content_livre.php?id=' . $ressources['id_livre'] . '">
+                        <a href="./view/content_livre.php?id=' . $ressources['id_livre'] . '">
                             <div class="item__image"><img src="' . $ressources['livre_cover_image'] . '" alt=""></div>
                             <div class="item__body">
                                 <div class="item__title">' . strip_tags($ressources['livre_titre']) . '</div>
@@ -614,7 +614,7 @@ die();
         if ($req->rowCount() > 0) {
             while ($ressources = $req->fetch()) {
                 echo '<div class="item" style="width: 85%">
-                        <a href="https://e-gnose.sfait.fr/view/content_livre.php?id=' . $ressources['id_livre'] . '">
+                        <a href="./view/content_livre.php?id=' . $ressources['id_livre'] . '">
                             <div class="item__image"><img src="' . $ressources['livre_cover_image'] . '" alt=""></div>
                             <div class="item__body">
                                 <div class="item__title">' . strip_tags($ressources['livre_titre']) . '</div>
