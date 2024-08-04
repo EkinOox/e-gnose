@@ -1,4 +1,4 @@
-Bonjour Monsieur, voici différentes choses à savoir : 
+Bonjour, voici différentes choses à savoir : 
 
 - Vous pouvez télécharger notre bdd via le fichier dump
 
